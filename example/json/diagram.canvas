@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "group-1",
+      "type": "group",
+      "x": -40,
+      "y": -40,
+      "width": 700,
+      "height": 420,
+      "label": "Release plan",
+      "color": "6"
+    },
+    {
+      "id": "intro",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 150,
+      "text": "# JSON Canvas\nAn **open** file format for infinite canvases.\n\n- `text`\n- `file`\n- `link`\n- `group`"
+    },
+    {
+      "id": "todo",
+      "type": "text",
+      "x": 0,
+      "y": 200,
+      "width": 300,
+      "height": 140,
+      "color": "4",
+      "text": "## To do\n- [ ] Draft spec\n- [ ] Build editor\n- [x] Pick a name"
+    },
+    {
+      "id": "spec",
+      "type": "link",
+      "x": 360,
+      "y": 0,
+      "width": 300,
+      "height": 120,
+      "url": "https://jsoncanvas.org"
+    },
+    {
+      "id": "logo",
+      "type": "file",
+      "x": 360,
+      "y": 200,
+      "width": 300,
+      "height": 140,
+      "file": "https://jsoncanvas.org/jsoncanvas.svg"
+    },
+    {
+      "id": "done",
+      "type": "text",
+      "x": 760,
+      "y": 90,
+      "width": 240,
+      "height": 120,
+      "color": "2",
+      "text": "## Connected\nEdges support **arrows**, colors, and labels."
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "fromNode": "intro",
+      "fromSide": "right",
+      "toNode": "spec",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "spec"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "intro",
+      "toNode": "todo"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "spec",
+      "toNode": "done",
+      "color": "1",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "logo",
+      "toNode": "done",
+      "label": "image"
+    }
+  ]
+}
