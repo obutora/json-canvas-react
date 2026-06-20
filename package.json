@@ -5,6 +5,14 @@
   "type": "module",
   "license": "MIT",
   "author": "HagaKun",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obutora/json-canvas-react.git"
+  },
+  "homepage": "https://github.com/obutora/json-canvas-react#readme",
+  "bugs": {
+    "url": "https://github.com/obutora/json-canvas-react/issues"
+  },
   "keywords": [
     "json-canvas",
     "jsoncanvas",
@@ -37,7 +45,8 @@
     "dev": "vite",
     "build": "tsup && node scripts/copy-css.mjs",
     "typecheck": "tsc --noEmit",
-    "demo:build": "vite build"
+    "demo:build": "vite build",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
